@@ -1,3 +1,3 @@
 # dotfiles
 
-![screen](/assets/screen.png)
+![screen](/.assets/screen.png)
