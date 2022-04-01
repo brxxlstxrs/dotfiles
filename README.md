@@ -2,4 +2,4 @@
 
 ![screen](/.assets/screen.png)
 
-recommended install this font: meslo nerd font
+> Recommended Install this font: Meslo Nerd Font
