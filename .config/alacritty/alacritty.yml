@@ -32,5 +32,5 @@ colors:
 # Font
 font:
   normal:
-    family: MesloLGS NF
+    family: JetBrainsMono NF
   size: 9.8
