@@ -11,37 +11,42 @@
 
 set $mod Mod4
 
-# Set resolution
-# exec --no-startup-id xrandr --output VGA-0 --mode 1024x768 --rate 85.00
+# set resolution
+exec --no-startup-id xrandr --output VGA-0 --mode 1024x768 --rate 85.00
 
-# Set gaps
+# set gaps
 for_window [class=".*"] border pixel 3
 
-gaps outer 12
+gaps outer 14
 gaps inner 10
 
 # Set wallpapers
 exec_always --no-startup-id feh --bg-fill ~/wallpapers/forest.jpg
+# Start picom
+# exec_always --no-startup-id picom --experimental-backends
 
 # Change keyboard layout
-# exec --no-startup-id setxkbmap -model pc105 -layout us,ru -option grp:alt_shift_toggle
+set $layout us,ru
+exec --no-startup-id setxkbmap -model pc105 -layout $layout -option grp:alt_shift_toggle
 
 # Start browser
-bindsym $mod+b exec --no-startup-id firefox
+set $browser firefox
+bindsym $mod+b exec --no-startup-id $browser
 
 # Start thonny
 bindsym $mod+t exec --no-startup-id ~/.local/bin/thonny
 
 # Take screenshot
-bindsym Print exec --no-startup-id scrot ~/.screenshot.png
+bindsym Print exec --no-startup-id scrot ~/screenshot1.png
 
 # Start discord
-byndsym $mod+Shift+d exec --no-startup-id discord
+bindsym $mod+Shift+d exec --no-startup-id discord
+
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
 # font pango:monospace 8
-font pango:JetBrainsMono NF 7
+font pango:JetBrainsMono Nerd Font 7
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -71,7 +76,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
-# start alacritty
+# start a terminal
 bindsym $mod+Return exec --no-startup-id alacritty
 
 # kill focused window
@@ -132,7 +137,8 @@ bindsym $mod+space focus mode_toggle
 # focus the parent container
 bindsym $mod+a focus parent
 
-# gruvbox theme
+#Set Theme(Gruvbox)
+
 # class                 border  bground text    indicator child_border
 client.focused          #7c6f64 #665c54 #ffffff #a89984   #7c6f64
 client.focused_inactive #333333 #504945 #ffffff #3c3836   #504945
@@ -221,4 +227,3 @@ bindsym $mod+r mode "resize"
 # bar {
 #         status_command i3status
 # }
-

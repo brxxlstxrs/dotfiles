@@ -1,8 +1,6 @@
 # dotfiles
 
-![screenshot](/.assets/screen.png)
-![screenshot1](/.assets/screenshot.png)
-![screenshot2](/.assets/screenshot1.png)
-![screenshot3](/.assets/screenshot2.png)
+![screenshot](/.assets/screenshot)
+![screenshot1](/.assets/screenshot1.png)
 
-> Recommended Install this font: JetBrainsMono Nerd Font
+> Recommended Install this font: DejaVuSansMono Nerd Font
