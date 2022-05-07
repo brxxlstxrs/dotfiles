@@ -30,14 +30,13 @@ set $layout us,ru
 exec --no-startup-id setxkbmap -model pc105 -layout $layout -option grp:alt_shift_toggle
 
 # Start browser
-set $browser firefox
-bindsym $mod+b exec --no-startup-id $browser
+bindsym $mod+b exec --no-startup-id firefox
 
 # Start thonny
 bindsym $mod+t exec --no-startup-id ~/.local/bin/thonny
 
 # Take screenshot
-bindsym Print exec --no-startup-id scrot ~/screenshot1.png
+bindsym Print exec --no-startup-id scrot ~/.screenshots/%T-%Y-%m-%d-screenshot.png
 
 # Start discord
 bindsym $mod+Shift+d exec --no-startup-id discord
