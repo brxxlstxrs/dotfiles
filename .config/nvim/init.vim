@@ -1,6 +1,6 @@
-" Plugins 
+" Plugins
 call plug#begin()
-  Plug 'neoclide/coc.nvim', {'branch': 'release'} 
+  Plug 'neoclide/coc.nvim', {'branch': 'release'}
   Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
   Plug 'junegunn/fzf.vim'
   Plug 'preservim/nerdtree'
@@ -21,13 +21,13 @@ set cc=81
 set background=dark
 set termguicolors
 
-" Tab settings 
+" Tab settings
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 set expandtab
 
-" Basic settings 
+" Basic settings
 set encoding=utf-8
 set updatetime=100
 set hidden
@@ -46,7 +46,7 @@ let mapleader = ","
 " Airline options
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
-let g:python3_host_prog = '/data/data/com.termux/files/usr/bin/python3'
+let g:python3_host_prog = '/home/misha/.pyenv/shims/python3'
 
 " Coc settings
 
