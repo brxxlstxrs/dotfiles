@@ -14,5 +14,4 @@ export MOZ_ENABLE_WAYLAND=1
 export PATH="${PATH}":~/.local/bin
 
 [ "$(tty)" = "/dev/tty1" ] &&
-  # exec dbus-launch --sh-syntax --exit-with-session sway
-  exec dbus-run-session sway
+  exec dbus-launch --sh-syntax --exit-with-session sway
