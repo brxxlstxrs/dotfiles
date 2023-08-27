@@ -20,7 +20,7 @@ set $menu bemenu-run -i -p "" | xargs swaymsg exec --
 ### Output configuration
 #
 output * {
-  bg ~/fuji.jpg fill
+  # bg ~/fuji.jpg fill
   # scale 2
 }
 
