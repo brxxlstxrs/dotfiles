@@ -1,0 +1,14 @@
+#!/bin/sh
+
+# bright colors
+export RESET="\[\e[0m\]"
+export BLACK="\[\e[30;1m\]"
+export RED="\[\e[31;1m\]"
+export CYAN="\[\e[32;1m\]"
+export YELLOW="\[\e[33;1m\]"
+export BLUE="\[\e[34;1m\]"
+export MAGENTA="\[\e[35;1m\]"
+export CYAN="\[\e[36;1m\]"
+export WHITE="\[\e[37;1m\]"
+
+export PS1="${CYAN}[${YELLOW}\u${CYAN}@${BLUE}\h ${MAGENTA}\w${CYAN}]${WHITE}\$${RESET} "
