@@ -3,9 +3,6 @@ xwayland disable
 gaps inner 10
 default_border pixel 2
 
-include "$HOME/.cache/wal/colors-sway"
-client.focused $color0 $background $foreground $color7 $background
-
 ### Variables
 #
 set $mod Mod4
@@ -23,7 +20,7 @@ set $menu bemenu-run -i -p "" | xargs swaymsg exec --
 ### Output configuration
 #
 output * {
-  bg $wallpaper fill
+  # bg $wallpaper fill
   # scale 2
 }
 
